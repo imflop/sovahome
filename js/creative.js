@@ -55,4 +55,11 @@
     }
   });
 
+  // Footer date now year
+  var setFullYearFooter = function () {
+    var dateNow = new Date();
+    $("#fullYear").append(dateNow.getFullYear());
+  };
+  setFullYearFooter();
+
 })(jQuery); // End of use strict
