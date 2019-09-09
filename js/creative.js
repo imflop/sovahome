@@ -58,7 +58,7 @@
   // Footer date now year
   var setFullYearFooter = function () {
     var dateNow = new Date();
-    $("#fullYear").append(dateNow.getFullYear());
+    $("#fullYear").append((dateNow.getFullYear() > 2019) ? "2019 &dash; " + dateNow.getFullYear() : dateNow.getFullYear());
   };
   setFullYearFooter();
 
